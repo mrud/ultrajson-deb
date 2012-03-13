@@ -5,8 +5,8 @@ Maintainer: Ulrich Dangel <mru@spamt.net>
 Build-Depends: debhelper (>= 8.1.0~), python-all-dev (>= 2.4.4-1~), python-all-dbg, python-support (>= 0.90~)
 Standards-Version: 3.9.3
 Homepage: https://github.com/esnme/ultrajson/
-#Vcs-Git: git://git.debian.org/collab-maint/ultrajson.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/ultrajson.git;a=summary
+Vcs-Git: git://github.com/mrud/ultrajson-deb.git
+Vcs-Browser: https://github.com/mrud/ultrajson-deb
 
 Package: python-ujson
 Architecture: any
