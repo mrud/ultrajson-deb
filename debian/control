@@ -14,10 +14,10 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
 Description: Ultra fast JSON encoder/decoder written in pure C
  UltraJSON is a fast and extendable JSON encoder and decoder written in pure C.
  .
- It is up to 5 times faster than python-cjson depending on the benchmark. In
- contrast to python-cjson this Python extension is maintained by upstream.
-
-
+ UltraJSON is up to 5 times faster than python-cjson depending on the benchmark.
+ In contrast to python-cjson this Python extension is maintained by upstream.
+ UltraJSON  is not a drop-in replacement for other json modules as it does not
+ support the default parameter for now
 
 Package: python-ujson-dbg
 Section: debug
@@ -27,8 +27,10 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-ujson (= 
 Description: Ultra fast JSON encoder/decoder written in pure C (debug extension)
  UltraJSON is a fast and extendable JSON encoder and decoder written in pure C.
  .
- It is up to 5 times faster than python-cjson depending on the benchmark. In
- contrast to python-cjson this Python extension is maintained by upstream.
+ UltraJSON is up to 5 times faster than python-cjson depending on the benchmark.
+ In contrast to python-cjson this Python extension is maintained by upstream.
+ UltraJSON  is not a drop-in replacement for other json modules as it does not
+ support the default parameter for now
  .
  This package contains the Python debug extension.
 
