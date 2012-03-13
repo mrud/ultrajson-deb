@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/python/python.mk
+
+%:
+	dh $@ --with python2
+
+override_dh_install:
+	# Install everything excluding the *_d.so debug extensions to python-foo
+	dh_install -X"*_d.so" "debian/tmp/*" -p python-ujson
+
+	# Install the debug extensions to python-foo-dbg
+	dh_install "debian/tmp/usr/lib/python*/*-packages/ujson*_d.so" -p python-ujson-dbg
+
+	# Continue with regular dh_install
+	dh_install
+
+override_dh_compress:
+	dh_compress -X.py

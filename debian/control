@@ -1,0 +1,34 @@
+Source: python-ujson
+Section: python
+Priority: optional
+Maintainer: Ulrich Dangel <mru@spamt.net>
+Build-Depends: debhelper (>= 8.1.0~), python-all-dev (>= 2.4.4-1~), python-all-dbg, python-support (>= 0.90~)
+Standards-Version: 3.9.3
+Homepage: https://github.com/esnme/ultrajson/
+#Vcs-Git: git://git.debian.org/collab-maint/ultrajson.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/ultrajson.git;a=summary
+
+Package: python-ujson
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Description: Ultra fast JSON encoder/decoder written in pure C
+ UltraJSON is a fast and extendable JSON encoder and decoder written in pure C.
+ .
+ It is up to 5 times faster than python-cjson depending on the benchmark. In
+ contrast to python-cjson this Python extension is maintained by upstream.
+
+
+
+Package: python-ujson-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-ujson (= ${binary:Version}), python-dbg
+Description: Ultra fast JSON encoder/decoder written in pure C (debug extension)
+ UltraJSON is a fast and extendable JSON encoder and decoder written in pure C.
+ .
+ It is up to 5 times faster than python-cjson depending on the benchmark. In
+ contrast to python-cjson this Python extension is maintained by upstream.
+ .
+ This package contains the Python debug extension.
+

@@ -1,0 +1,5 @@
+python-ujson (1.18-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn) 
+
+ -- Ulrich Dangel <mru@spamt.net>  Tue, 13 Mar 2012 01:15:22 +0100
